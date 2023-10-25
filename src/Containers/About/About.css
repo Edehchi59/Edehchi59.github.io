@@ -1,0 +1,20 @@
+:root {
+  --btn: #ff770f;
+  --Liteorange: #ff770f;
+  --orange: #eb6700;
+  --blackColor: #000000;
+  --liteGray: #9a9a9a;
+  --gray: #313338;
+  --whiteColor: #ffffff;
+  --navyBlue: #00123a;
+  --lightblue: #243673;
+  --deamWhite: #fbfcff;
+  --grayWhite: #ffffffd6;
+  --deamBlue: #bfd1ff;
+  --berkshire-font: "Berkshire Swash", serif;
+  --raleway-font: "Raleway", sans-serif;
+}
+
+.aboutSec {
+  background: var(--orange);
+}/*# sourceMappingURL=About.css.map */

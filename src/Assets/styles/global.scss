@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --btn: #ff770f;
+  --Liteorange: #ff770f;
+  --orange: #eb6700;
+  --Litepink: #fff7f1;
+  --blackColor: #000000;
+  --liteGray: #9a9a9a;
+  --gray: #313338;
+  --whiteColor: #ffffff;
+  --navyBlue: #00123a;
+  --lightblue: #243673;
+  --deamWhite: #fbfcff;
+  --grayWhite: #ffffffd6;
+  --deamBlue: #bfd1ff;
+  --liteWhite: #dddddd;
+  --berkshire-font: "Berkshire Swash", serif;
+  --raleway-font: "Raleway", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--raleway-font);
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.5em;
+  }
+}
+
+a.btn {
+  text-decoration: none;
+  background: var(--btn);
+  color: var(--whiteColor);
+  padding: 0.89em 3em;
+  border-radius: 2em;
+  text-transform: capitalize;
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:hover {
+    background: var(--orange);
+    transform: translateY(0.75em);
+  }
+}
+button.btn {
+  text-decoration: none;
+  background: var(--btn);
+  color: var(--whiteColor);
+  padding: 0.89em 3em;
+  border-radius: 3em;
+  text-transform: capitalize;
+  border: none;
+  outline: none;
+  &:hover {
+    background: var(--orange);
+  }
+}
+
+a.navBtn {
+  text-decoration: none;
+  background: var(--btn);
+  color: var(--whiteColor);
+  padding: 0.89em 3em;
+  border-radius: 2em;
+  text-transform: capitalize;
+  transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  &:hover {
+    background: var(--orange);
+  }
+}
+
+.icon {
+  font-size: 1.2em;
+  color: var(--blackColor);
+}
+
+body {
+  width: 100%;
+  aspect-ratio: 1/1;
+  overflow-x: hidden;
+  a.btn {
+    align-items: center;
+
+    .icon {
+      margin-left: 0.45em;
+      color: var(--whiteColor);
+    }
+  }
+  input {
+    border: none;
+    outline: none;
+  }
+  footer {
+    margin: 0;
+  }
+}

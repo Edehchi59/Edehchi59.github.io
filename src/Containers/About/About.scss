@@ -1,0 +1,440 @@
+:root {
+  --btn: #ff770f;
+  --Liteorange: #ff770f;
+  --orange: #eb6700;
+  --Litepink: #fff7f1;
+  --blackColor: #000000;
+  --liteGray: #9a9a9a;
+  --gray: #313338;
+  --whiteColor: #ffffff;
+  --navyBlue: #00123a;
+  --lightblue: #243673;
+  --deamWhite: #fbfcff;
+  --grayWhite: #ffffffd6;
+  --deamBlue: #bfd1ff;
+  --liteWhite: #dddddd;
+  --berkshire-font: "Berkshire Swash", serif;
+  --raleway-font: "Raleway", sans-serif;
+}
+.aboutSec {
+  width: 100%;
+  aspect-ratio: 1/1;
+  .aboutUsSec {
+    .aboutUsWrapper {
+      padding: 1em 4em;
+      margin-top: 5em;
+      @media (max-width: 765px) {
+        padding: 0;
+      }
+      .aboutUsFlex {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        @media (max-width: 765px) {
+          width: 100%;
+          grid-template-columns: repeat(1, 0fr);
+          justify-content: center;
+        }
+        .content {
+          padding: 1em 0;
+          padding-right: 3em;
+          @media (max-width: 765px) {
+            padding: 0;
+          }
+          p {
+            font-size: 0.94em;
+            line-height: 1.6em;
+            color: var(--gray);
+            @media (max-width: 765px) {
+              font-size: 0.87em;
+            }
+          }
+          img {
+            width: 108px;
+            margin-bottom: 1em;
+          }
+          h4 {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 1em;
+            @media (max-width: 765px) {
+              font-size: 1.2em;
+            }
+          }
+          .paragraph {
+            @media (max-width: 765px) {
+              margin: 1em 0;
+            }
+            .flex1 {
+              display: flex;
+              align-items: center;
+              margin-bottom: 0.89em;
+              h1 {
+                font-size: 3.15em;
+                font-weight: 400;
+                color: var(--Liteorange);
+              }
+              .ptag {
+                margin-left: 1.2em;
+              }
+            }
+            .flex2 {
+              margin-bottom: 2em;
+            }
+          }
+        }
+
+        .imgSec {
+          .imgWrapper {
+            @media (max-width: 765px) {
+              margin: 2em 0;
+            }
+            .imgFlex {
+              display: grid;
+              grid-template-columns: repeat(2, 1fr);
+              @media (max-width: 765px) {
+                width: 100%;
+                grid-template-columns: repeat(1, 0fr);
+                justify-content: center;
+              }
+              img {
+                border-radius: 1.5625em;
+                object-fit: cover;
+                transition: transform 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+                &:hover {
+                  background: var(--orange);
+                  transform: translateY(0.75em);
+                }
+              }
+              .LongImg {
+                width: 297px;
+                height: 594px;
+                @media (max-width: 765px) {
+                  margin: 0 0 2em;
+                  width: 340px;
+                  height: 680px;
+                }
+              }
+              .gridImg {
+                margin-left: 2em;
+                @media (max-width: 765px) {
+                  margin-left: 0;
+                  display: none;
+                }
+                .ShortImg {
+                  width: 299px;
+                  height: 280px;
+                  margin-bottom: 1.6em;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .chefSec {
+    .chefWrapper {
+      .bgimg {
+        background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/dine-out.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1264px;
+        height: 951px;
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        @media (max-width: 765px) {
+          width: 390px;
+          height: 100%;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          aspect-ratio: 1.325/1;
+          background-color: #000000;
+          opacity: 0.6;
+          transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+          z-index: -1;
+        }
+        h1 {
+          color: var(--whiteColor);
+          padding: 1.89em 0 0.34em;
+          text-align: center;
+          font-size: 3em;
+          font-weight: 500;
+          font-family: var(--berkshire-font);
+          @media (max-width: 765px) {
+            font-size: 2em;
+          }
+        }
+        img {
+          width: 180px;
+        }
+        .chefImgSec {
+          width: 100%;
+          aspect-ratio: 1/1;
+          display: flex;
+          justify-content: center;
+          position: relative;
+          top: 5.5em;
+          @media (max-width: 765px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            aspect-ratio: 1/1;
+            top: 2em;
+          }
+          .chefImgFlex {
+            .imgCards {
+              width: 379px;
+              height: 363px;
+              position: relative;
+              z-index: 1;
+              border: 1px solid var(--orange);
+              display: flex;
+              flex-direction: column;
+              justify-content: end;
+              align-items: center;
+              padding: 3em;
+              @media (max-width: 765px) {
+                width: 349px;
+                height: 356px;
+              }
+              &::after {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: transparent;
+                background-image: linear-gradient(
+                  180deg,
+                  rgba(255, 255, 255, 0.16) 36%,
+                  #000000 100%
+                );
+                opacity: 1;
+                z-index: -1;
+              }
+              h2 {
+                color: var(--whiteColor);
+                font-weight: 600;
+                font-size: 0.998em;
+              }
+              h3 {
+                font-family: var(--berkshire-font);
+                color: var(--whiteColor);
+                font-weight: 500;
+              }
+              a.btn {
+                width: 200px;
+                height: 47px;
+                padding: 0.3em 0.4em;
+                display: inline-flex;
+                justify-content: center;
+                margin-top: 0.78em;
+                @media (max-width: 765px) {
+                  width: 250px;
+                  padding: 1.5em 0;
+                  margin-top: 0;
+                }
+              }
+            }
+            .firstLayer {
+              display: flex;
+              @media (max-width: 765px) {
+                flex-direction: column;
+              }
+              .grid-One {
+                background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/10/chef01-free-img.jpg");
+                background-size: cover;
+              }
+              .grid-two {
+                background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/about-image-01.jpg");
+                background-size: cover;
+              }
+              .grid-three {
+                background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/about-image-02.jpg");
+                background-size: cover;
+              }
+            }
+            .secondLayer {
+              display: flex;
+              @media (max-width: 765px) {
+                flex-direction: column;
+              }
+              .grid-four {
+                background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/baker-1620504_1920.jpg");
+                background-size: cover;
+                width: 569px;
+                height: 397px;
+                @media (max-width: 765px) {
+                  width: 349px;
+                  height: 356px;
+                }
+              }
+              .grid-five {
+                background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/02/chef05-free-img.jpg");
+                background-size: cover;
+                width: 569px;
+                height: 397px;
+                @media (max-width: 765px) {
+                  width: 349px;
+                  height: 144px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .ammentiesWrapper {
+      width: 100%;
+      aspect-ratio: 3/1;
+      background: var(--Litepink);
+      padding: 13em 3em 3em;
+      @media (max-width: 765px) {
+        padding: 4em 1em 2em;
+        text-align: center;
+      }
+      h1 {
+        font-size: 3em;
+        font-family: var(--berkshire-font);
+        font-weight: 500;
+        margin-bottom: 0.45em;
+        @media (max-width: 765px) {
+          font-size: 2em;
+          margin-bottom: 0.7em;
+        }
+      }
+      img {
+        width: 12%;
+        margin-left: 1em;
+        @media (max-width: 765px) {
+          width: 60%;
+        }
+      }
+      .amenties {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 5em;
+
+        @media (max-width: 765px) {
+          margin-left: 0;
+          margin-top: 3em;
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .links {
+          display: flex;
+          align-items: center;
+          margin-left: 8em;
+          @media (max-width: 765px) {
+            margin-left: 0;
+            margin-bottom: 2em;
+            flex-direction: column;
+          }
+          .icon {
+            font-size: 1.7em;
+            margin-right: 0.78em;
+            color: var(--orange);
+          }
+          h2 {
+            font-size: 1.4em;
+            font-family: var(--berkshire-font);
+            font-weight: 500;
+          }
+        }
+        .links:nth-child(1) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .reviewSec {
+    padding: 5em 0 1em;
+    .reviewWrapper {
+      width: 100%;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        aspect-ratio: 6/1;
+        background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/quotes2-free-img.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: -1;
+        opacity: 0.1;
+        @media (max-width: 765px) {
+          aspect-ratio: 1/1;
+        }
+      }
+      .review {
+        z-index: 1;
+        p {
+          font-size: 1.3em;
+          padding: 0 15em;
+          line-height: 1.6em;
+          @media (max-width: 765px) {
+            padding: 0;
+            font-size: 1.1em;
+            line-height: 1.3em;
+          }
+        }
+        .profile {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 2em 0;
+          @media (max-width: 765px) {
+            padding: 0;
+            justify-content: center;
+            padding: 1em 0;
+            margin-top: 2em;
+          }
+          h4 {
+            font-weight: 500;
+            margin-left: 1em;
+          }
+        }
+      }
+    }
+    .recommendWrapper {
+      padding: 1em;
+      text-align: center;
+      h3 {
+        font-size: 1.4em;
+        font-family: var(--berkshire-font);
+        font-weight: 500;
+      }
+
+      .recommendFlex {
+        display: flex;
+        margin-top: 3em;
+        @media (max-width: 765px) {
+          padding: 0;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .link {
+          margin-left: 6em;
+          @media (max-width: 765px) {
+            padding: 0;
+            margin-left: 0;
+            margin-bottom: 1em;
+          }
+        }
+      }
+    }
+  }
+}

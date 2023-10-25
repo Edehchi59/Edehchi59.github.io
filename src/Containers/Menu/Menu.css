@@ -1,0 +1,33 @@
+:root {
+  --btn: #ff770f;
+  --Liteorange: #ff770f;
+  --orange: #eb6700;
+  --blackColor: #000000;
+  --liteGray: #9a9a9a;
+  --gray: #313338;
+  --whiteColor: #ffffff;
+  --navyBlue: #00123a;
+  --lightblue: #243673;
+  --deamWhite: #fbfcff;
+  --grayWhite: #ffffffd6;
+  --deamBlue: #bfd1ff;
+  --berkshire-font: "Berkshire Swash", serif;
+  --raleway-font: "Raleway", sans-serif;
+}
+
+.MenuSec {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.MenuSec .pasteSec {
+  background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/10/pic48-free-img.jpg");
+  background-color: transparent;
+  background-position: top right;
+  background-repeat: no-repeat;
+  width: 100%;
+  aspect-ratio: 1/2;
+}
+.MenuSec .pasteSec .pasteWrapper .pasteFlex .pasteImgSec .pasteImg img {
+  width: 200px;
+  aspect-ratio: 1/1;
+}/*# sourceMappingURL=Menu.css.map */

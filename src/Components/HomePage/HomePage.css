@@ -1,0 +1,594 @@
+:root {
+  --btn: #ff770f;
+  --Liteorange: #ff770f;
+  --orange: #eb6700;
+  --milkish: #fef7f2;
+  --blackColor: #000000;
+  --liteGray: #9a9a9a;
+  --gray: #313338;
+  --whiteColor: #ffffff;
+  --navyBlue: #00123a;
+  --lightblue: #243673;
+  --deamWhite: #fbfcff;
+  --grayWhite: #ffffffd6;
+  --deamBlue: #bfd1ff;
+  --berkshire-font: "Berkshire Swash", "Berkshire Swash", handwriting;
+  --raleway-font: "Raleway", sans-serif;
+}
+
+.homePageContainer {
+  background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/pic28-free-img.jpg");
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 765px) {
+  .homePageContainer {
+    background-repeat: repeat;
+  }
+}
+@media (max-width: 968px) {
+  .homePageContainer {
+    background-repeat: repeat;
+  }
+}
+.homePageContainer::after {
+  content: "";
+  background-color: var(--whiteColor);
+  opacity: 0.58;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.homePageContainer .wrapper {
+  position: relative;
+  padding: 0;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper {
+    padding: 0;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec {
+  padding: 8em 0 0;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec {
+    padding: 3em 0.67em 0;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex {
+    flex-direction: column;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content {
+  margin-right: 0.56em;
+  text-align: center;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content {
+    margin-bottom: 4em;
+  }
+}
+@media (max-width: 968px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content {
+    text-align: center;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content h3 {
+  font-size: 1.33em;
+  font-family: var(--berkshire-font);
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-bottom: 0.44em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content h3 {
+    font-size: 1.1em;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content h1 {
+  font-size: 2.89em;
+  font-family: var(--berkshire-font);
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 1.25em;
+  margin-bottom: 0.24em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content h1 {
+    font-size: 1.8em;
+    margin-bottom: 0.89em;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content h6 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 1.2em;
+  margin-bottom: 0.8em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content h6 {
+    font-size: 1.1em;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content .btn {
+  display: inline-flex;
+  align-items: center;
+  text-transform: capitalize;
+  margin-top: 3em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content .btn {
+    font-size: 0.87em;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .content .btn .icon {
+  font-size: 1.34em;
+  color: var(--whiteColor);
+  margin-left: 0.57em;
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .contentImg.Noshadow {
+  background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2019/12/Pizza-slice.jpg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 426px;
+  height: 400px;
+  margin-right: 4em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .contentImg.Noshadow {
+    display: none;
+  }
+}
+@media (max-width: 968px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .contentImg.Noshadow {
+    display: none;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .contentImg.Bgshadow {
+  box-shadow: 0 24px 41px -19px rgba(0, 0, 0, 0.5);
+  background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2019/12/food-table-meet.jpg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 426px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .contentImg.Bgshadow .BgshadowContent {
+  text-align: center;
+  margin: -10px 0 0;
+  padding: 150px 40px 40px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .contentImg.Bgshadow .BgshadowContent h1 {
+  font-size: 3em;
+  color: var(--whiteColor);
+  font-family: var(--berkshire-font);
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 0.34em;
+  text-transform: capitalize;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .contentImg.Bgshadow .BgshadowContent h1 {
+    font-size: 2.1em;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .contentImg.Bgshadow .BgshadowContent .spanSec {
+  margin-bottom: 1em;
+}
+.homePageContainer .wrapper .homepageWrapper .welcomeSec .welcomeFlex .contentImg.Bgshadow .BgshadowContent .spanSec span {
+  display: block;
+  color: var(--whiteColor);
+}
+.homePageContainer .wrapper .homepageWrapper .menuSec {
+  padding: 1em 0.6em 3em;
+}
+.homePageContainer .wrapper .homepageWrapper .menuSec .menuflex {
+  text-align: center;
+  padding: 6em 10em 7em;
+  margin-bottom: 3em;
+  line-height: 1.7em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .menuSec .menuflex {
+    padding: 2em 1em;
+    margin-bottom: 2em;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .menuSec .menuflex .content {
+  text-align: center;
+}
+.homePageContainer .wrapper .homepageWrapper .menuSec .menuflex .content .img img {
+  width: 13%;
+}
+.homePageContainer .wrapper .homepageWrapper .menuSec .menuflex .content h1 {
+  font-size: 3em;
+  text-transform: capitalize;
+  font-family: var(--berkshire-font);
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 0.32em;
+}
+.homePageContainer .wrapper .homepageWrapper .menuSec .menuflex .content h3 {
+  font-size: 1.4em;
+  text-transform: capitalize;
+  font-weight: 600;
+  line-height: 1em;
+  margin-bottom: 0.9em;
+}
+.homePageContainer .wrapper .homepageWrapper .menuSec .menuflex .content p {
+  text-align: center;
+  font-size: 0.98em;
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg {
+  background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/dine-out.jpg");
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #0c0c0c;
+  opacity: 0.46;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -10em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec {
+    padding: 0 1em;
+    top: -5em;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox {
+  box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.12);
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 4em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox {
+    margin-bottom: 6em;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex {
+  display: grid;
+  grid-template-columns: repeat(3, 0fr);
+  grid-template-rows: repeat(3, 0fr);
+  aspect-ratio: 330/100;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex {
+    display: grid;
+    grid-template-columns: repeat(1, 0fr);
+    grid-template-rows: repeat(1, 0fr);
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex .grid-item {
+  padding: 0;
+  border: 1px solid var(--Liteorange);
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex .menuTextCard {
+  background-color: var(--milkish);
+  padding: 4.65em 2em;
+  text-align: center;
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex .menuTextCard .textCardBox {
+  color: var(--blackColor);
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex .menuTextCard .textCardBox h1 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.3em;
+  margin-bottom: 0.76em;
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex .menuTextCard .textCardBox p {
+  line-height: 1.8em;
+  margin-bottom: 1.8em;
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex .menuTextCard .textCardBox .price {
+  display: inline;
+  padding: 0.45em 0;
+  border-top: 1px solid var(--liteGray);
+  border-bottom: 1px solid var(--liteGray);
+  font-size: 1.7em;
+  font-weight: 600;
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex .menuImgCard {
+  width: 100%;
+  max-width: 512px;
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex .menuImgCard img {
+  width: 382px;
+  height: auto;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex .menuImgCard img {
+    max-width: 330px;
+    height: 100%;
+  }
+}
+@media (min-width: 968px) {
+  .homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .menuBox .menuCardFlex .menuImgCard img {
+    max-width: 512px;
+  }
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .btnSec {
+  display: flex;
+  justify-content: center;
+}
+.homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .btnSec a.btn {
+  padding: 1em 1.3em;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -7em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .homepageWrapper .menuImg .menuImgSec .menuImgBox .btnSec a.btn {
+    margin-top: 2em;
+  }
+}
+.homePageContainer .wrapper .happyHourSec {
+  margin: 8em 0;
+  padding: 0 3em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .happyHourSec {
+    margin: 8em 0 1em;
+  }
+}
+.homePageContainer .wrapper .happyHourSec .flex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .happyHourSec .flex {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-content: center;
+  }
+}
+.homePageContainer .wrapper .happyHourSec .flex .pubImg {
+  box-shadow: 0 24px 41px -19px rgba(0, 0, 0, 0.5);
+  background-image: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/pic34-free-img.jpg");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 540px;
+  height: 100%;
+  min-height: 363px;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .happyHourSec .flex .pubImg {
+    width: 350px;
+  }
+}
+.homePageContainer .wrapper .happyHourSec .flex .pubImg .imgShadowContent {
+  text-align: center;
+  margin: -10px 0 0;
+  padding: 150px 40px 40px;
+  background-color: transparent;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.85) 100%);
+}
+.homePageContainer .wrapper .happyHourSec .flex .pubImg .imgShadowContent h1 {
+  font-size: 1.5em;
+  color: var(--whiteColor);
+  font-family: var(--berkshire-font);
+  font-weight: 500;
+  line-height: 1.3em;
+  margin-bottom: 0.34em;
+  text-transform: capitalize;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .happyHourSec .flex .pubImg .imgShadowContent h1 {
+    font-size: 1em;
+  }
+}
+.homePageContainer .wrapper .happyHourSec .flex .happyHourContent {
+  padding: 0 2em;
+  text-align: center;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .happyHourSec .flex .happyHourContent {
+    margin: 3em 0;
+  }
+}
+.homePageContainer .wrapper .happyHourSec .flex .happyHourContent h2 {
+  font-family: var(--berkshire-font);
+  font-weight: 500;
+  line-height: 1.2em;
+  margin-bottom: 0.2em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .happyHourSec .flex .happyHourContent h2 {
+    margin-top: 1em;
+  }
+}
+.homePageContainer .wrapper .happyHourSec .flex .happyHourContent h1 {
+  font-size: 2.8em;
+  font-family: var(--berkshire-font);
+  font-weight: 500;
+  margin-bottom: 0.4em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .happyHourSec .flex .happyHourContent h1 {
+    font-size: 1.8em;
+    margin: 0 0 0.9em;
+  }
+}
+.homePageContainer .wrapper .happyHourSec .flex .happyHourContent h3 {
+  font-size: 1.7em;
+  font-weight: 600;
+  line-height: 1em;
+  margin-bottom: 0.87em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .happyHourSec .flex .happyHourContent h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+  }
+}
+.homePageContainer .wrapper .happyHourSec .flex .happyHourContent p {
+  line-height: 1.6em;
+  text-align: center;
+}
+.homePageContainer .wrapper .happyHourSec .flex .happyHourContent a.btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 3em;
+}
+.homePageContainer .wrapper .reviewSec {
+  margin: 1em 0;
+  padding: 0 3em;
+  position: relative;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .reviewSec {
+    padding: 0 1.7em;
+  }
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex {
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+  }
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .reviewCard {
+  margin-bottom: 2em;
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .reviewCard img {
+  margin-bottom: 1em;
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .reviewCard .comment {
+  font-size: 1.3em;
+  font-weight: 500;
+  font-family: var(--berkshire-font);
+  margin-bottom: 1em;
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .reviewCard .name span {
+  font-size: 0.98em;
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex1 {
+  width: 100%;
+  aspect-ratio: 1/1;
+  padding-top: 10em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex1 {
+    padding: 12em 0 0;
+  }
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex1::after {
+  content: "";
+  background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/quotes2-free-img.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  opacity: 0.1;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex1::after {
+    background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2018/09/quotes2-free-img.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex1 img {
+  margin-bottom: 0.89em;
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex1 h1 {
+  font-size: 2.7em;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: var(--berkshire-font);
+  margin-bottom: 1.2em;
+}
+@media (max-width: 765px) {
+  .homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex1 h1 {
+    font-size: 2em;
+  }
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex2 {
+  margin-left: 2em;
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex2 .socialLinks h1 {
+  font-size: 1.26em;
+  font-weight: 500;
+  font-family: var(--berkshire-font);
+  margin-bottom: 0.5em;
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex2 .socialLinks .links .icon {
+  background: var(--Liteorange);
+  margin-left: 0.76em;
+  width: 36px;
+  height: 36px;
+  padding: 0.3em;
+  border-radius: 50%;
+  color: var(--whiteColor);
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex2 .socialLinks .links .icon:nth-child(1) {
+  margin-left: 0;
+}
+.homePageContainer .wrapper .reviewSec .reviewWrapper .reviewFlex .flex2 .socialLinks .links .icon:hover {
+  background: var(--orange);
+}/*# sourceMappingURL=HomePage.css.map */

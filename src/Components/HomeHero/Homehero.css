@@ -1,0 +1,157 @@
+:root {
+  --btn: #ff770f;
+  --Liteorange: #ff770f;
+  --orange: #eb6700;
+  --blackColor: #000000;
+  --gray: #313338;
+  --whiteColor: #ffffff;
+  --navyBlue: #00123a;
+  --lightblue: #243673;
+  --deamWhite: #fbfcff;
+  --grayWhite: #ffffffd6;
+  --deamBlue: #bfd1ff;
+  --berkshire-font: "Berkshire Swash", serif;
+  --raleway-font: "Raleway", sans-serif;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.52);
+  background: url("https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/fresco-pizza-top.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100% 20%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  padding: 100px 0 0;
+  position: relative;
+  z-index: 1;
+}
+@media (max-width: 765px) {
+  .container {
+    background-color: rgba(0, 0, 0, 0.52);
+    background-image: url(https://websitedemos.net/italian-restaurant-02/wp-content/uploads/sites/283/2020/01/fresco-pizza-top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+  }
+}
+.container::after {
+  content: "";
+  background-color: transparent;
+  background-image: linear-gradient(0deg, #0c0c0c 0%, #000000 20%);
+  opacity: 0.58;
+  transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.container .wrapper {
+  padding: 1em 6.87em;
+}
+@media (max-width: 340px) {
+  .container .wrapper {
+    padding: 0;
+  }
+}
+.container .wrapper .contentSec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--whiteColor);
+}
+.container .wrapper .contentSec .fork img,
+.container .wrapper .contentSec .knife img {
+  width: 100%;
+}
+@media (max-width: 765px) {
+  .container .wrapper .contentSec .fork img,
+  .container .wrapper .contentSec .knife img {
+    width: 50px;
+  }
+}
+@media (max-width: 440px) {
+  .container .wrapper .contentSec .fork img,
+  .container .wrapper .contentSec .knife img {
+    width: 30px;
+  }
+}
+.container .wrapper .contentSec .Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+}
+.container .wrapper .contentSec .Content img {
+  width: 100%;
+  max-width: 250px;
+  height: 27px;
+  margin-bottom: 3em;
+}
+.container .wrapper .contentSec .Content .heroText {
+  text-align: center;
+}
+.container .wrapper .contentSec .Content .heroText h1 {
+  font-family: var(--berkshire-font);
+  font-size: 10em;
+  padding: 0 0 0.3em;
+  text-align: center;
+}
+@media (max-width: 765px) {
+  .container .wrapper .contentSec .Content .heroText h1 {
+    font-size: 7em;
+    padding: 0;
+  }
+}
+@media (max-width: 440px) {
+  .container .wrapper .contentSec .Content .heroText h1 {
+    font-size: 4.5em;
+    padding: 0;
+  }
+}
+.container .wrapper .contentSec .Content .heroText .Hero__subText {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: var(--Liteorange);
+}
+@media (max-width: 440px) {
+  .container .wrapper .contentSec .Content .heroText .Hero__subText {
+    font-size: 1.5em;
+    padding: 0.43em 0 0;
+  }
+}
+.container .wrapper .contentSec .Content .heroText .goodFoodWrapper {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+}
+.container .wrapper .contentSec .Content .heroText .goodFoodWrapper span {
+  width: 15em;
+  border-top: 1px solid var(--whiteColor);
+}
+@media (max-width: 765px) {
+  .container .wrapper .contentSec .Content .heroText .goodFoodWrapper span {
+    display: none;
+  }
+}
+.container .wrapper .contentSec .Content .heroText .goodFoodWrapper .goodFoodtext p {
+  font-size: 1.5em;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--grayWhite);
+  margin: 0 2em;
+}
+@media (max-width: 440px) {
+  .container .wrapper .contentSec .Content .heroText .goodFoodWrapper .goodFoodtext p {
+    font-size: 1em;
+    padding: 0.43em 0 0;
+    font-weight: 900;
+    margin: 0;
+  }
+}
+.container .wrapper .contentSec .knife {
+  margin-left: auto;
+}/*# sourceMappingURL=Homehero.css.map */

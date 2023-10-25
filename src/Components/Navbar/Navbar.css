@@ -1,0 +1,112 @@
+:root {
+  --btn: #ff770f;
+  --Liteorange: #ff770f;
+  --orange: #eb6700;
+  --blackColor: #000000;
+  --liteGray: #9a9a9a;
+  --gray: #313338;
+  --whiteColor: #ffffff;
+  --navyBlue: #00123a;
+  --lightblue: #243673;
+  --deamWhite: #fbfcff;
+  --grayWhite: #ffffffd6;
+  --deamBlue: #bfd1ff;
+  --berkshire-font: "Berkshire Swash", serif;
+  --raleway-font: "Raleway", sans-serif;
+}
+
+header {
+  background: var(--whiteColor);
+  padding: 0.78em 1.5em;
+  position: relative;
+  top: 0;
+  box-shadow: 0px 4px 14px -1px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 765px) {
+  header {
+    padding: 1.5em 1.5em;
+  }
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .logo img {
+  width: 100%;
+  max-width: 132px;
+  height: 100%;
+  min-height: 47px;
+  margin-left: 1em;
+}
+header nav .navItems {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 765px) {
+  header nav .navItems {
+    display: none;
+  }
+}
+header nav .navItems .navlinks {
+  display: flex;
+  margin-right: 1.4em;
+}
+header nav .navItems .navlinks li {
+  list-style-type: none;
+}
+header nav .navItems .navlinks li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  margin-right: 2em;
+  color: var(--blackColor);
+  font-size: 0.94em;
+}
+header nav .navItems .navlinks li a:hover {
+  color: var(--Liteorange);
+}
+header nav .navItems .navlinks li a.active {
+  color: var(--Liteorange);
+}
+header nav .hamburger-react {
+  width: 3em;
+  height: 2em;
+  color: var(--orange);
+  border: 1px solid var(--orange);
+  padding: 0.2em;
+  display: none;
+}
+@media (max-width: 765px) {
+  header nav .hamburger-react {
+    display: flex;
+  }
+}
+
+.hamburgerWrapper {
+  width: 100%;
+  height: 220px;
+  background: var(--deamWhite);
+  display: none;
+}
+@media (max-width: 765px) {
+  .hamburgerWrapper {
+    display: block;
+  }
+}
+.hamburgerWrapper#hidden {
+  display: none;
+}
+.hamburgerWrapper .hamburgerMenu li {
+  padding: 0.87em;
+  list-style-type: none;
+  border-top: 1px solid var(--liteGray);
+}
+.hamburgerWrapper .hamburgerMenu a {
+  color: var(--blackColor);
+  text-decoration: none;
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+.hamburgerWrapper .hamburgerMenu a.active {
+  color: var(--Liteorange);
+}/*# sourceMappingURL=Navbar.css.map */
