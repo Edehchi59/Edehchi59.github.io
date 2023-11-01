@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Fresco/static/css/main.e1a97820.css",
+    "main.js": "/Fresco/static/js/main.866d5a52.js",
+    "index.html": "/Fresco/index.html",
+    "main.e1a97820.css.map": "/Fresco/static/css/main.e1a97820.css.map",
+    "main.866d5a52.js.map": "/Fresco/static/js/main.866d5a52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1a97820.css",
+    "static/js/main.866d5a52.js"
+  ]
+}
